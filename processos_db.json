@@ -1,0 +1,109 @@
+{
+  "processos": [
+    {
+      "id": 2,
+      "codigo": "BRSP9393930",
+      "origem": "São Paulo",
+      "dataAbertura": "01.01.2018",
+      "valorAReceber": 22000.99,
+      "dataPagto": "12.12.2019",
+      "cliente": "Maria das Dores",
+      "contraria": "Adebardo Ferreira",
+      "forum": "São Paulo",
+      "vara": "Sexta de São Paulo",
+      "local": "Barra Funda",
+      "status": [
+        "aberto",
+        "fechado"
+      ],
+      "materia": "Separação de Bens",
+      "andamento": "regular",
+      "dataLimite": " 10.10.2030",
+      "audiencias": [
+        {
+          "id": 1,
+          "horaAudiencia": "13:00",
+          "lembrarEmDias": "3",
+          "dataAudiencia": "19.09.2018"
+        },
+        {
+          "id": 2,
+          "horaAudiencia": "13:00",
+          "lembrarEmDias": "1",
+          "dataAudiencia": "30.09.2018"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "codigo": "BR2009303DDAS",
+      "origem": "São Paulo",
+      "dataAbertura": "2018.10.10",
+      "valorAReceber": 13000.99,
+      "dataPagto": "2018.10.10",
+      "cliente": "Jãum de Paula",
+      "contraria": "Adebardo Ferreira",
+      "forum": "São Paulo",
+      "vara": "Sexta de São Paulo",
+      "local": "Barra Funda",
+      "status": [
+        "aberto",
+        "fechado"
+      ],
+      "materia": "Separação de Bens",
+      "andamento": "regular",
+      "dataLimite": "2018.10.10",
+      "audiencias": [
+        {
+          "id": 1,
+          "horaAudiencia": "13:00",
+          "lembrarEmDias": 3,
+          "dataAudiencia": "2018.10.10"
+        },
+        {
+          "id": 2,
+          "horaAudiencia": "13:00",
+          "lembrarEmDias": 1,
+          "dataAudiencia": "2018.10.10"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "codigo": "BRMG2992929202",
+      "origem": "São Paulo",
+      "dataAbertura": "01.01.2018",
+      "valorAReceber": 14000.99,
+      "dataPagto": "12.12.2019",
+      "cliente": "Jãum de Paula",
+      "contraria": "Adebardo Ferreira",
+      "forum": "São Paulo",
+      "vara": "Sexta de São Paulo",
+      "local": "Barra Funda",
+      "status": [
+        "aberto",
+        "fechado"
+      ],
+      "materia": "Separação de Bens",
+      "andamento": "regular",
+      "dataLimite": " 10.10.2030",
+      "audiencias": [
+        {
+          "id": 1,
+          "horaAudiencia": "13:00",
+          "lembrarEmDias": "3",
+          "dataAudiencia": "19.09.2018"
+        },
+        {
+          "id": 2,
+          "horaAudiencia": "13:00",
+          "lembrarEmDias": "1",
+          "dataAudiencia": "30.09.2018"
+        }
+      ]
+    }
+  ]
+}
+
+
+
