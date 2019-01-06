@@ -1,7 +1,9 @@
 import {Component, OnInit} from '@angular/core';
-import {Observable} from 'rxjs/Observable';
 import {HttpClient} from '@angular/common/http';
-import {map} from 'rxjs/operators';
+import {ProcessosService} from '../processos.service';
+import {InfiniteScroll} from 'ionic-angular';
+import {ViewChild} from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
     selector: 'app-processos',
@@ -9,17 +11,34 @@ import {map} from 'rxjs/operators';
     styleUrls: ['./processos.page.scss'],
 })
 export class ProcessosPage implements OnInit {
-    processos: Observable<any>;
-    films: Observable<any>;
+    processos: any[];
+    page: number;
+    @ViewChild(InfiniteScroll) infiniteScroll: InfiniteScroll;
 
-    constructor(public httpClient: HttpClient) {
-        let myrequest = this.httpClient.get('http://5c312fced18a50001463d3e8.mockapi.io/api/v1/processos')
-            .pipe(map((response => response)));
+    constructor(public httpClient: HttpClient, public  processosService: ProcessosService
+    , public  router: ActivatedRoute) {
 
     }
 
     ngOnInit() {
-
+        this.processos = [];
+        this.page = 1;
+        this.getAllProcessos(this.page);
     }
+
+    getAllProcessos(page: number) {
+        this.processosService.getAll()
+            .then((result: any) => {
+                for (let i = 0; i < result.length; i++) {
+                    let processo = result[i];
+                    this.processos.push(processo);
+                    console.log(processo);
+                }
+            })
+            .catch((error: any) => {
+                console.log('erro ao listar os processos');
+            });
+    }
+
 
 }
