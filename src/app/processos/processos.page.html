@@ -11,7 +11,7 @@
 
 <ion-content>
     <ion-list>
-        <ion-item *ngFor="let processo of processos"  [href]="'/processo/' + processo.id">
+        <ion-item *ngFor="let processo of processos" [routerLink]="'/processo/' + processo.id">
             {{processo.codigo}}
         </ion-item>
     </ion-list>
